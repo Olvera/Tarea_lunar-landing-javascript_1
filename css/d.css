@@ -7,12 +7,12 @@ div{font-family: verdana;color: yellow;}
    background-position: center center;}
 .d{height:100%;width:100%;position:fixed;bottom:0px;}
 .d img{position: fixed; bottom:0px;width:100%; height: 25%;}
-#nave{text-align:center;position:fixed;top:10%;width:100%;height:20%;}
+#nave{text-align:center;position:fixed;width:100%;height:20%;}
 #nave img{height:70%;}
 #cpanel, #menu {list-style-type:none;}
 #hidem,#showm{display:none;}
-
-#menu{width: 100%; height: auto; padding: 5px 10px;	overflow:hidden}
+#showm{float: right;}
+#menu{width: 100%; height: auto; padding: 5px 10px;	overflow:hidden;}
 #menu li{float: left;padding-right: 20px;}
 li a{color:white;text-align:center; font-family:"Verdana", sans-serif;}
 

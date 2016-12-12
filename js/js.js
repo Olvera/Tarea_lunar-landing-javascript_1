@@ -77,8 +77,9 @@ function moverNave()
 	}
 	else
 	{ 
-		stop();  alunizajeNave();
-	}
+		stop(); alunizajeNave();
+
+	}  
 
 }
 
@@ -87,29 +88,30 @@ function alunizajeNave()
 	if (v < 8)
 	{
 		alert("FELICIDADES!!\nGran alunizaje\n\nCONGRATULATIONS!!\nGood landing!!");
-		
+		stop();
 	}
 	else
 	{
 		//explosion
-		
-	}
-	
+		getElementById("nav").src="img/nave.gif";
+		stop();
+	}	
 }
 
 function motorOn()
-{	cambiaNave();
+{	
 	a=-g;
 	if (timerFuel==null)
 	timerFuel=setInterval(function(){ actualizarAltura(); }, 100);
-	
+	document.getElementById("nav").src="img/nave.gif";
 }
 
 function motorOff()
-{   cambiaNave();
+{   
 	a=g;
 	clearInterval(timerFuel);
 	timerFuel=null;
+	document.getElementById("nav").src="img/nave1.svg";
 	
 }
 
@@ -118,31 +120,4 @@ function actualizarAltura()
 	//Aquí hay que cambiar el valor del marcador de Fuel...
 	fuel-=1;
 	document.getElementById("fuel").innerHTML=fuel;	
-}
-
-function reStart()
-{
-	var r = confirm("Otra partida?\n\nAnother Game?");
-	if (r == true)
-	{
-    	moverNave();
-	}
-	else
-	{
-		stop();
-	} 
-}
-
-function cambiaNave()
-{
-	imgSrc = document.getElementById("nav").src;
-	if (imgSrc=="img/nave1.svg")
-	{
-		imgSrc="img/nave.gif";
-	}
-	else
-	{
-		imgSrc="img/nave1.svg";
-	}
-
 }

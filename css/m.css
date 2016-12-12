@@ -10,11 +10,11 @@ div{font-family: verdana;font-size: 0.7em; color: yellow;}
 #nave{text-align:center;position:fixed;top:10%;width:100%;height:20%}
 #nave img{height:70%;}
 #cpanel,#menu{list-style-type: none;}
-#hidem,#showm{padding-top: 2%; padding-right: 2%; float:right;}
+#hidem,#showm{padding: 2%; float:right;}
 
 
-#menu{width: 30%; height: auto;	overflow:hidden;}
-li a{display: block;color:white; font-family:"Verdana", sans-serif;}
+#menu{width: 30%; height: auto;	overflow:hidden;display: block;}
+li a{ color:white; font-family:"Verdana", sans-serif;}
 
 a{color:white; font-family:"Verdana", sans-serif;
 	text-decoration:none}

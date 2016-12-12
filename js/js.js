@@ -70,7 +70,7 @@ function moverNave()
 	alt = y.toFixed(2);
 	document.getElementById("altura").innerHTML= alt;
 	
-	//mover hasta que top sea un 80% de la pantalla
+	//mover hasta que top sea un 80% de la pantalla. Ajustado a imágenes.
 	if (y<80)
 	{ 
 		document.getElementById("nave").style.top = y+"%"; 
@@ -85,14 +85,15 @@ function moverNave()
 
 function alunizajeNave()
 {
-	if (v < 8)
+	if (v <= 5)
 	{
+		//Mensaje de felicitación por un buen alunizaje (velocidad menor a 5 m/s).
 		alert("FELICIDADES!!\nGran alunizaje\n\nCONGRATULATIONS!!\nGood landing!!");
 		stop();
 	}
 	else
 	{
-		//explosion
+		//explosion. Velocidad del alunizaje supera el límite de 5 m/s.
 		document.getElementById("nav").src="img/explosion.gif";
 		stop();
 	}	

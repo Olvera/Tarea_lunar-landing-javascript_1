@@ -8,6 +8,7 @@ div{font-family: verdana;font-size: 0.7em; color: yellow;}
 .c{position:fixed;top:0px;bottom:0px;left:0px;right:0px;display:none;z-index:1}
 .d{position:fixed;bottom:0px;height:10%;width:100%;}
 .d img{position: fixed; left: 0px; right: 0px; bottom:0px;width:100%; height: 25%;}
+
 #nave{text-align:center;position:fixed;top:10%;width:100%;height:20%}
 #nave img{height:70%;}
 #cpanel,#menu{list-style-type: none;}

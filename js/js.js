@@ -93,7 +93,7 @@ function alunizajeNave()
 	else
 	{
 		//explosion
-		getElementById("nav").src="img/nave.gif";
+		document.getElementById("nav").src="img/explosion.gif";
 		stop();
 	}	
 }

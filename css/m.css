@@ -4,6 +4,7 @@ div{font-family: verdana;font-size: 0.7em; color: yellow;}
 .a{width:100%;height:90px;overflow:hidden;position:fixed;top:0px}
 .b{background-image: url("../img/tierra_m.gif"); background-repeat: no-repeat;
    background-position: center center;width:100%;height:100%;overflow:hidden;}
+.b_howto{width:80%;height:100%;padding: 30% 5%;}
 .c{position:fixed;top:0px;bottom:0px;left:0px;right:0px;display:none;z-index:1}
 .d{position:fixed;bottom:0px;height:10%;width:100%;}
 .d img{position: fixed; left: 0px; right: 0px; bottom:0px;width:100%; height: 25%;}
@@ -14,9 +15,6 @@ div{font-family: verdana;font-size: 0.7em; color: yellow;}
 
 
 #menu{width: 30%; height: auto;	overflow:hidden;display: block;}
-li a{ color:white; font-family:"Verdana", sans-serif;}
-
-a{color:white; font-family:"Verdana", sans-serif;
-	text-decoration:none}
+li a{ color:white; font-family:"Verdana", sans-serif;text-decoration:none}
 
 li a:hover:not(.active){background-color:#555}

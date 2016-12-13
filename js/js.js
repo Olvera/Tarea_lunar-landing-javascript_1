@@ -1,4 +1,6 @@
-var y = 10; // altura inicial y0=10%, debe leerse al iniciar si queremos que tenga alturas diferentes dependiendo del dispositivo
+var y = 10;  // altura inicial y0=10%, debe leerse al iniciar si queremos que tenga alturas diferentes dependiendo del dispositivo.
+var y2= 70;  //Añadimos variables para presentar la altura adecuadamente, ya que estamos descendiendo,la altura
+var alt= 70; // ha de decrementarse (estamos 'alunizando'). Aproximamos valores: fin de recorrido= 80% - altura inicial 'y'.
 var v = 0;
 var g = 1.622;
 var a = g;
@@ -67,7 +69,8 @@ function moverNave()
 	vel = v.toFixed(2);
 	document.getElementById("velocidad").innerHTML=vel;
 	y +=v*dt;
-	alt = y.toFixed(2);
+	y2 -=v*dt;
+	alt = y2.toFixed(2);
 	document.getElementById("altura").innerHTML= alt;
 	
 	//mover hasta que top sea un 80% de la pantalla. Ajustado a imágenes.
@@ -103,7 +106,7 @@ function motorOn()
 {	
 	a=-g;
 	if (timerFuel==null)
-	timerFuel=setInterval(function(){ actualizarAltura(); }, 100);
+	timerFuel=setInterval(function(){ actualizarFuel(); }, 100);
 	document.getElementById("nav").src="img/nave.gif";
 }
 
@@ -116,9 +119,20 @@ function motorOff()
 	
 }
 
-function actualizarAltura()
+function actualizarFuel()
 {
-	//Aquí hay que cambiar el valor del marcador de Fuel...
-	fuel-=1;
-	document.getElementById("fuel").innerHTML=fuel;	
+	//Cambia el valor del marcador de Fuel, según vamos empleando el motor y dejamos sin función,
+	//una vez alunizamos o acabamos el combustible, los eventos de teclado finalizando el juego.
+	if (fuel>0 && alt>0)
+	{
+		fuel-=1;
+		document.getElementById("fuel").innerHTML=fuel;
+	}
+	else
+	{
+		motorOff()
+		document.getElementById("nav").src=null;
+		document.onkeydown = null ;
+		document.onkeyup = null;
+	}
 }

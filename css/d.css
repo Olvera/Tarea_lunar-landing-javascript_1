@@ -1,21 +1,22 @@
 body,html{height:100%;padding:0px;margin:0px; background-color: lightblue; 
 	background-image: url("../img/fon_estr.gif");}
-div{font-family: verdana;color: yellow;}
+div, p{font-family: "Verdana", sans-serif; color: yellow;}
 .c{display:block !important}
 .a,.b,.c,.b_howto{display:inline-block;width:33.33%;height:100%;float:left;}
 .b{background-image: url("../img/tierra_d.gif"); background-repeat: no-repeat;
    background-position: center center;}
 .b_howto{padding-top: 10%;}
-.d{height:100%;width:100%;position:fixed;bottom:0px;}
+.d{height:auto; width:100%; position:fixed; bottom:0px;}
 .d img{position: fixed; bottom:0px;width:100%; height: 25%;}
-
-#nave{text-align:center;position:fixed;width:100%;height:20%;}
+#nave {text-align:center;position:fixed;width:100%;height:20%;}
 #nave img{height:70%;}
+#astr, #tier { position:fixed; width:auto; height:auto; text-align: center; margin-top: 10%; margin-left: 10%;}
 #cpanel, #menu {list-style-type:none;}
 #hidem,#showm{display:none;}
 #showm{float: right;}
-#menu{width: 100%; height: auto; padding: 5px 10px; overflow:hidden;}
-#menu li{float: left;padding-right: 20px;display: inline;}
-li a{color:white;text-align:center; font-family:"Verdana", sans-serif;text-decoration: none;}
-
-li a:hover:not(.active){background-color:#555}
+#menu{width: auto; height: auto; padding: 5px 5px; overflow:hidden; background-color: #111; opacity: 0.8;}
+#menu li{float: left; padding: 5px;display: inline;}
+a{color:white;text-align:center; font-family:"Verdana", sans-serif;text-decoration: none;}
+a:hover:not(.active){background-color:#555}
+.active{background-color: darkred; color: yellow;}
+footer{display: block; text-align: justify; position: fixed; right: 5%; bottom: 10%;}

@@ -92,13 +92,13 @@ function alunizajeNave()
 	{
 		//Mensaje de felicitación por un buen alunizaje (velocidad menor a 5 m/s).
 		alert("FELICIDADES!!\nGran alunizaje\n\nCONGRATULATIONS!!\nGood landing!!");
-		stop();
+		
 	}
 	else
 	{
 		//explosion. Velocidad del alunizaje supera el límite de 5 m/s.
 		document.getElementById("nav").src="img/explosion.gif";
-		stop();
+		
 	}	
 }
 
@@ -123,16 +123,28 @@ function actualizarFuel()
 {
 	//Cambia el valor del marcador de Fuel, según vamos empleando el motor y dejamos sin función,
 	//una vez alunizamos o acabamos el combustible, los eventos de teclado finalizando el juego.
-	if (fuel>0 && alt>0)
-	{
-		fuel-=1;
-		document.getElementById("fuel").innerHTML=fuel;
-	}
+	if (alt>0) 
+	{	
+		if (fuel>0)
+		{
+			fuel-=1;
+			document.getElementById("fuel").innerHTML=fuel;
+		}
+		else
+		{
+			paraJuego();			
+		}
+	}	
 	else
 	{
-		motorOff()
-		document.getElementById("nav").src=null;
-		document.onkeydown = null ;
-		document.onkeyup = null;
+		paraJuego();
+		alunizajeNave();
 	}
+}
+
+function paraJuego()
+{
+	motorOff();
+	document.onkeydown = null ;
+	document.onkeyup = null;	
 }

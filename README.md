@@ -41,7 +41,7 @@
 2. Página de instruciones (howto.html)    
    * Descripción del escenario de juego y como jugar: acciones, reacciones, límites...
    
-3. Página Acerca de..._ (about.html)
+3. Página Acerca de... (about.html)
    * Información breve sobre diseño y recursos
    * Contacto
    * Sin panel de datos ni de acciones. Desaparece también la nave.

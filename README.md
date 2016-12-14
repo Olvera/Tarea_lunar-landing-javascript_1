@@ -18,7 +18,7 @@
   El juego consiste, sencillamente, en una nave espacial que desciende sobre la superficie lunar, con la aceleración de la atracción gravitatoria de la Luna. Ha de realizarse dicho alunizaje a una velocidad final adecuada, evitando su exceso, que conlleva la explosión de la nave al tocar la superficie. 
   Para conseguir un alunizaje correcto, ha de encenderse el motor de la nave, mediante la pulsación de cualquier tecla del teclado del dispositivo (y mantenimiento de esta), que se apaga al soltarla, antes de consumir el combustible. Podemos comprobar, en la esquina superior izquierda, en el cuadro de lecturas, la velocidad actual, el combustible y la altura, referencia con la que controlar el descenso.
   Se felicita si se consigue la velocidad final fijada, pero, de lo contrario, la nave explota. En ambos casos se finaliza el juego.
-  Para reaundarlo, basta clickar sobre el enlace _Inicio juego_, en el menu horizontal de la esquina superior derecha (oculto en dispositivos móviles o pequeñas pantallas, accesibles en un link: _SHOW MENU - HIDE MENU_).
+  Para reaundarlo, basta clickar sobre el enlace _Inicio juego_, en el menú horizontal de la esquina superior derecha (oculto en dispositivos móviles o pequeñas pantallas, accesibles en un link: _SHOW MENU - HIDE MENU_).
      
 
 ###Diseño de páginas

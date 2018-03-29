@@ -1,7 +1,7 @@
 # Task_Lan_Markup_UT_02
-##Tarea 2ª unidad - LMSGI - ASIX 1º - Lunar landing - javascript
+## Tarea 2ª unidad - LMSGI - ASIX 1º - Lunar landing - javascript
 
-###Notas sobre diseño
+### Notas sobre diseño
   El proyecto retoma la estructura de la tarea anterior, [_Task_Lan_Markup_UT_02_](https://github.com/Olvera/Task_Lan_Markup_UT_02). Incorporamos interacción y automatismos en las páginas que forman el proyecto con lenguaje _**JavaScript**_, junto a dos distintos archivos de hoja de estilos _**.css**_, una para configurar en pantallas relativamente grandes (d.css - a partir de 961 px de ancho) y otra para dispositivos más pequeños (m.css - menos de 960 px de ancho).
     La interacción consiste en codigo generado que activa el funcionamiento del juego, sus opciones y posibilidades, menús, aparición de mensajes, etc.
   La imagen al pie es de la superficie lunar (_sonda LRO - [NASA](www.nasa.gov/multimedia/imagegallery/index.html)_), en origen con la curva natural del satélite, convertida en plana, a la que se añade el selenita/alien, este en _.svg_, formato elegido también para la nave espacial, ambas de [Open Clipart](openclipart.org), al igual que las de _la Tierra_, _explosión_ y _motor encendido_, esta última como combinación de la nave original a la que se ha añadido, con InkSpace, el efecto de motor encendido, todas optimizadas con Riot.
@@ -16,14 +16,14 @@
    
   También se ha modificado el código suministrado para adecuar la lectura de altura, de más (80) a menos (0 - alunizaje), así como inplementadas funciones necesarias para que al aparecer el mensaje de felicitación, o la explosión, se detenga el juego, reanudandose al actualizar la página (actualizando desde el navegador o clikcando en _Inicio juego_ del menú general).
 
-###Mecánica del juego
+### Mecánica del juego
   El juego consiste, sencillamente, en una nave espacial que desciende sobre la superficie lunar, con la aceleración de la atracción gravitatoria de la Luna. Ha de realizarse dicho alunizaje a una velocidad final adecuada, evitando su exceso, que conlleva la explosión de la nave al tocar la superficie. 
   Para conseguir un alunizaje correcto, ha de encenderse el motor de la nave, mediante la pulsación de cualquier tecla del teclado del dispositivo (y mantenimiento de esta), que se apaga al soltarla, antes de consumir el combustible. Podemos comprobar, en la esquina superior izquierda, en el cuadro de lecturas, la velocidad actual, el combustible y la altura, referencia con la que controlar el descenso.
   Se felicita si se consigue la velocidad final fijada, pero, de lo contrario, la nave explota. En ambos casos se finaliza el juego.
   Para reaundarlo, basta clickar sobre el enlace _Inicio juego_, en el menú horizontal de la esquina superior derecha (oculto en dispositivos móviles o pequeñas pantallas, accesibles en un link: _SHOW MENU - HIDE MENU_).
      
 
-###Diseño de páginas
+### Diseño de páginas
 
 1. Página principal (index.html)  
     Para el contenido HTML, varios contenedores '_DIV_', separando por capas imágenes y menús 
